@@ -52,4 +52,3 @@ Contributions are welcome! To contribute:
 
 ---
 
-Feel free to customize this README further based on additional features or information specific to your project.
