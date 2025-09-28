@@ -16,7 +16,7 @@ function CalendarBody() {
 
   return (
     <>
-      <h1 className="text-3xl font-bold text-blue-600 mb-6">Panchang Calendar</h1>
+      <h1 className="bg-orange-500 text-3xl font-bold text-blue-600 mb-6">Panchang Calendar</h1>
       {/* Month & Year Selection */}
       <div className="flex gap-4 mb-4">
         <select
@@ -39,7 +39,7 @@ function CalendarBody() {
         />
       </div>
       {/* Calendar Grid */}
-      <div className="grid grid-cols-7 gap-2 bg-white p-4 rounded shadow">
+      <div className="grid grid-cols-7 gap-2 bg-orange-500 p-4 rounded shadow">
         {["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"].map((d) => (
           <div key={d} className="font-bold text-center">{d}</div>
         ))}
@@ -52,9 +52,9 @@ function CalendarBody() {
           return (
             <div
               key={dateStr}
-              className={`border rounded p-2 text-center cursor-pointer hover:bg-yellow-100 ${
+              className={`border rounded p-2 text-center cursor-pointer hover:bg-red-900 ${
                 selectedDate.toDateString() === day.toDateString()
-                  ? "bg-blue-200"
+                  ? "bg-red-900"
                   : ""
               }`}
               onClick={() => setSelectedDate(day)}
@@ -68,7 +68,7 @@ function CalendarBody() {
         })}
       </div>
       {/* Selected Date Panchang */}
-      <div className="mt-6 p-4 bg-white rounded shadow max-w-md mx-auto">
+      <div className="mt-6 p-4 bg-red-800 rounded shadow max-w-md mx-auto">
         <h2 className="text-xl font-semibold mb-2">
           Panchang for {selectedDate.toDateString()}
         </h2>

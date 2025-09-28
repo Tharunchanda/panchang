@@ -11,13 +11,13 @@ function Navbar() {
   };
 
   return (
-    <nav className="bg-white shadow rounded mb-6 px-4 py-3 flex items-center justify-between">
+    <nav className="bg-orange-800 shadow rounded mb-6 px-4 py-3 flex items-center justify-between">
       <div className="text-xl font-bold text-blue-700">
         <Link to="/">Panchang</Link>
       </div>
       <div className="flex gap-6">
-        <Link to="/" className="text-gray-700 hover:text-blue-600 font-medium">Home</Link>
-        <Link to="/" className="text-gray-700 hover:text-blue-600 font-medium">Calendar</Link>
+        <Link to="/" className="text-orange-100 hover:text-orange-600 font-medium">Home</Link>
+        <Link to="/" className="text-orange-100 hover:text-orange-600 font-medium">Calendar</Link>
         {user ? (
           <>
             <Link to="/profile" className="text-gray-700 hover:text-blue-600 font-medium">{user.name}'s Profile</Link>
@@ -31,7 +31,7 @@ function Navbar() {
         ) : (
           <>
             <Link to="/login" className="text-gray-700 hover:text-blue-600 font-medium">Login</Link>
-            <Link to="/signup" className="text-gray-700 hover:text-blue-600 font-medium">Sign Up</Link>
+            <Link to="/signup" className="text-gray-700 hover:text-blue-600 font-medium">Sign Up</Link>              
           </>
         )}
       </div>
