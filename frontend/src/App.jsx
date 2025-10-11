@@ -12,9 +12,11 @@ function App() {
   return (
     <AuthProvider>
       <Router>
-        <div className="min-h-screen bg-orange-500 p-6 flex flex-col">
+        {/* The background color for the entire app is set here */}
+        <div className="min-h-screen bg-stone-100 flex flex-col">
           <Navbar />
-          <div className="flex-1">
+          {/* Added padding here to give content space */}
+          <div className="flex-1 p-6">
             <Routes>
               <Route path="/" element={<CalendarBody />} />
               <Route path="/profile" element={<Profile />} />
@@ -30,3 +32,4 @@ function App() {
 }
 
 export default App;
+
