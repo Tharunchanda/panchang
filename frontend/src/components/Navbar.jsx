@@ -21,13 +21,6 @@ function Navbar() {
 
         {/* Navigation Links */}
         <div className="flex items-center gap-6">
-          <Link to="/" className="text-slate-700 hover:text-amber-600 font-medium transition-colors duration-200">
-            Home
-          </Link>
-          <Link to="/calendar" className="text-slate-700 hover:text-amber-600 font-medium transition-colors duration-200">
-            Calendar
-          </Link>
-
           {/* Vertical Separator */}
           <div className="w-px h-6 bg-teal-800/20"></div>
 
